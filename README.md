@@ -26,3 +26,11 @@ WHS Coding II Capstone Project
 - Style client-side app
     - Create CSS files
     - Color Scheme: 
+        - https://visme.co/blog/website-color-schemes/
+        - Number 38
+- Make client-side app dynamic
+    - Create JS files
+    - Work on checklists & student comparison components
+    - Pre-assessment 
+    - Stretch Goal
+        - Implement Machine Learning (to counteract loads of if-then statements)
