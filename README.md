@@ -15,3 +15,14 @@ WHS Coding II Capstone Project
     - Wireframe for Profile Page
     - Wireframe for College Road Map
     - (Opt.) Wireframes for Resources / About Us
+- Set up project file structure
+    - Determine workflow, who will be project manager and maintainer of repo
+    - Determine directory and file naming conventions and locations
+- Begin client-side development
+    - Create HTML bases
+    - Potential Inspired Designs
+        - https://zoom.us/
+        - https://builtbybuffalo.com/
+- Style client-side app
+    - Create CSS files
+    - Color Scheme: 
