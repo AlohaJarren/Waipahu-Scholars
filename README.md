@@ -10,8 +10,8 @@ WHS Coding II Capstone Project
 
 ### Project Plan
 
-Create Design Wireframes and Mockups.
-  - Wireframe for Home Page
-  - Wireframe for Profile Page
-  - Wireframe for College Road Map
-  - (Opt.) Wireframes for Resources / About Us
+- Create Design Wireframes and Mockups.
+    - Wireframe for Home Page
+    - Wireframe for Profile Page
+    - Wireframe for College Road Map
+    - (Opt.) Wireframes for Resources / About Us
