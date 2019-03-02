@@ -11,7 +11,7 @@ iamRoleStatements:
     Resource: "*"
 
 # The `service` block is the name of the service
-service: whs_scholars
+service: whs-scholars
 
 # The `provider` block defines where your service will be deployed
 provider:
@@ -20,11 +20,13 @@ provider:
 
 # The `functions` block defines what code to deploy
 functions:
-  helloWorld:
-    handler: handler.helloWorld
+  adduser:
     # The `events` block defines how to trigger the handler.helloWorld code
+    postStudent:
+    handler: routes/adduser.adduser
     events:
       - http:
-          path: hello-world
-          method: get
+          path: post
+          method: post
           cors: true
+          integration: lambda
