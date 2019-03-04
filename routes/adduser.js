@@ -17,7 +17,7 @@ module.exports.adduser = (event, context, callback) => {
   console.log('event', event.body);
   //var salt = bcrypt.genSaltSync(10);
   //var hash = bcrypt.hashSync(password, salt);
-  const postUser = `INSERT INTO ${table} VALUES($1, $2, $3, $4, $5, default);`;
+  const postUser = `INSERT INTO ${table} VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP);`;
   let {id, password, email, first_name, last_name} = event.body;
 
   pool.connect()
