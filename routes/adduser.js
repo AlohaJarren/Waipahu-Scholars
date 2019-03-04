@@ -2,7 +2,7 @@
 
 const Pool = require('pg-pool');
 const config = require('../config.json');
-//const bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 const { table, host, database, user, password, port } = config;
 const pool = new Pool({
   host,
@@ -15,15 +15,15 @@ const pool = new Pool({
 
 module.exports.adduser = (event, context, callback) => {
   console.log('event', event.body);
-  //var salt = bcrypt.genSaltSync(10);
-  //var hash = bcrypt.hashSync(password, salt);
+  var salt = bcrypt.genSaltSync(10);
+  var hash = bcrypt.hashSync(password, 10, salt);
   const postUser = `INSERT INTO ${table} VALUES($1, $2, $3, $4, $5, CURRENT_TIMESTAMP);`;
-  let {id, password, email, first_name, last_name} = event.body;
+  let {id, hash, email, first_name, last_name} = event.body;
 
   pool.connect()
     .then(client => {
       client.release();
-      return client.query(postUser, [id, password, email, first_name, last_name]);
+      return client.query(postUser, [id, hash, email, first_name, last_name]);
     })
     .then(data => {
       const response = {
