@@ -31,6 +31,7 @@ html, body, .main {
     transition: 0.5s all ease;
 }
 
+
 .cursor:nth-child(1) {
     background-color: orange;
     color: white;
