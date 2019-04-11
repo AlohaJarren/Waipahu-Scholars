@@ -1,4 +1,6 @@
-function register() {
+let button = document.querySelector('#register-button')
+button.addEventListener('click', function register(e) {
+  e.preventDefault();
   let email = document.querySelector('#email').value
   let password = document.querySelector('#password').value
   console.log(email)
@@ -9,4 +11,4 @@ function register() {
     .catch(err => {
       console.log(err.message);
     });
-}
+})
