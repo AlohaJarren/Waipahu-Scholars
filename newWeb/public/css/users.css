@@ -1,0 +1,70 @@
+.content {
+    display: flex;
+    height: 90%;
+}
+
+#sideBarUser {
+    display: inline-flex;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+#profileImage {
+    height:30%;
+    padding: 2%;
+}
+
+#profileImage > img {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.textBox {
+    padding-left: 10%;
+    display: flex;
+    height: 68%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.textBox > * > h3 {
+    font-size: 2.5rem;
+}
+
+.textBox > * > h4 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* main content stuff */
+#mainContent {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 64.8%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.groundField {
+    margin: 0 auto;
+
+}
+
+.floatingMoneyBox {
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+    border: 1px solid black;
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.floatingMoneyBox > p {
+    margin: auto;
+}
