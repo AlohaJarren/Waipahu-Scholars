@@ -7,11 +7,12 @@ button.addEventListener('click', function login(e) {
   console.log(email)
   console.log(password)
   localStorage.setItem('user', email)
-  window.location = 'http://localhost:8080/public/goals.html'
+  window.location = 'goals.html'
   fire
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .catch(err => {
       console.log(err.message);
-    });
+  });
+  console.log('localStorage[user]', localStorage['user']);
 })
