@@ -29,3 +29,12 @@ functions:
           method: post
           cors: true
           integration: lambda
+  
+  listusers:
+    handler: routes/listusers.listusers
+    events:
+      - http:
+          path: listusers
+          method: get
+          cors: true
+          integration: lambda
