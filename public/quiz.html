@@ -10,38 +10,38 @@
     <form>
         1. What is your current GPA?
         <br>
-        <input type = 'number' min = '0' max = '5' name = 'gpa'>
+        <input id = 'question-1' type = 'number' min = '0' max = '5' name = 'gpa' required>
         <br>
         <br>
         2. What is your last ACT score?
         <br>
-        <input type = 'number' min = '0' max = '36' name = 'act'>
+        <input id = 'question-2' type = 'number' min = '0' max = '36' name = 'act' required>
         <br>
         <br>
         For questions 3 - 6, A = 4, B = 3, C = 2 D = 1, F = 0.
         <br>
         3. What is your grade in English?
         <br>
-        <input type = 'number' min = '0' max = '4' name = 'grade-english'>
+        <input id = 'question-3' type = 'number' min = '0' max = '4' name = 'grade-english' required>
         <br>
         <br>
         4. What is your grade in History/Social Studies?
         <br>
-        <input type = 'number' min = '0' max = '4' name = 'grade-social-studies'>
+        <input id = 'question-4' type = 'number' min = '0' max = '4' name = 'grade-social-studies' required>
         <br>
         <br>
         5. What is your grade in Math?
         <br>
-        <input type = 'number' min = '0' max = '4' name = 'grade-math'>
+        <input id = 'question-5' type = 'number' min = '0' max = '4' name = 'grade-math' required>
         <br>
         <br>
         6. What is your grade in Science?
         <br>
-        <input type = 'number' min = '0' max = '4' name = 'grade-science'>
+        <input id = 'question-6' type = 'number' min = '0' max = '4' name = 'grade-science' required>
         <br>
         <br>
-        
+        <input type = 'submit' id = 'submit-button'>
     </form>
-    
+    <script src="./quiz.js"></script>
 </body>
 </html>
