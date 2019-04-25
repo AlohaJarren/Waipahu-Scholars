@@ -8,24 +8,23 @@
 </head>
 <body>
     <form>
+        <input id = 'quiz-question1' type = 'number' name = 'gpa' required>
         <input id = 'email' type = 'text' name = 'email' required>
         <input id = 'password' type = 'password' name = 'password' minlength = '6' required>
         <button id = 'register-button' type = 'submit'>Register</button>
     </form>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-    <script>
-    let config = {
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  var config = {
     apiKey: "AIzaSyDdSoEIi8293lKd7K9Si8-Vlrd9igy-3ik",
     authDomain: "waipahu-scholars.firebaseapp.com",
     databaseURL: "https://waipahu-scholars.firebaseio.com",
     projectId: "waipahu-scholars",
     storageBucket: "waipahu-scholars.appspot.com",
     messagingSenderId: "864526713967"
-    };
-    firebase.initializeApp(config);
-
-    let fire = firebase
-    </script>
+  };
+  firebase.initializeApp(config);
+</script>
     <script src="./register.js"></script>
 </body>
 </html>
