@@ -24,7 +24,8 @@
     };
     firebase.initializeApp(config);
 
-    let fire = firebase
+    const auth = firebase.auth();
+    const database = firebase.firestore();
     </script>
     <script src="./register.js"></script>
 </body>
