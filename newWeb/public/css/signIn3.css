@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    background: linear-gradient(29.03deg, #F99003 50.27%, rgba(148, 234, 198, 0.85) 50.28%);
+}
+
+#schol {
+    position: absolute;
+    width: 325px;
+    height: 47px;
+    left: 608px;
+    top: 113px;
+
+    font-family: Mina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+
+    color: #474747;
+}
+
+#nextStep {
+   position: absolute;
+   width: 512px;
+   height: 34px;
+   left: 512px;
+   top: 169px;
+
+   font-family: Mina;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 35px;
+   text-align: center;
+
+   color: #474747;
+}
+
+#signUp {
+    position: absolute;
+    width: 351px;
+    height: 40px;
+    left: 593px;
+    top: 232px;
+    
+    font-family: Mina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    
+    color: #474747;    
+}
+
+#email {
+    position: absolute;
+    width: 383px;
+    height: 49px;
+    left: 617px;
+    top: 324px;
+    
+    font-family: Mina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FCFCFC;
+    padding-left: 10px;
+}
+
+#password {
+    position: absolute;
+    width: 350px;
+    height: 49px;
+    left: 628px;
+    top: 437px;
+    
+    font-family: Mina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    
+    color: #FCFCFC;    
+    padding-right: 100px;
+}
+
+#continue {
+    position: absolute;
+    width: 144px;
+    height: 42px;
+    left: 697px;
+    top: 508px;
+    
+    background: #F66E00;
+    border-radius: 10px;
+}
+
+h5 {
+    font-family: Mina;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+    
+    color: #FCFCFC;
+}
