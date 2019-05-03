@@ -9,14 +9,15 @@ const database = firebase.database();
 
 button.addEventListener('click', function register(e) {
   e.preventDefault();
-  email = document.querySelector('#email').value
-  password = document.querySelector('#password').value
-  question1 = document.querySelector('#quiz-question1').value;
-
-  // Allows you to create email & Password
-  firebase
-    .auth()
+  let email = document.querySelector('#email').value
+  let password = document.querySelector('#password').value
+  console.log(email)
+  console.log(password)
+  auth
     .createUserWithEmailAndPassword(email, password)
+    .then(penis => {
+      database.collection('users').doc(penis.user.uid).set({viagra: '98% of users recommend'}).then(() => {console.log('it fuckn worked')})
+    })
     .catch(err => {
       console.log(err.message);
     });

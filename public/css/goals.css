@@ -1,0 +1,122 @@
+html, body, .main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.main {
+    position: relative;
+}
+
+
+.navTop {
+    text-align: center;
+    font-weight: 550;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ECECEC;
+    width:100%;
+    font-size: 2rem;
+    height:10%;
+}
+
+.cursor {
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    display: inline-flex;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+
+.cursor:nth-child(1) {
+    background-color: orange;
+    color: white;
+}
+
+.cursor:hover {
+    background: orange;
+    color: white;
+}
+
+.cursor > p {
+    margin: auto;
+}
+
+#main {
+    height: 90%;
+    width: 100%;
+}
+
+.title {
+    height: 10%;
+    font-size: 100%;
+}
+
+.title > h1 {
+    margin: 0 0 0.5rem 2rem;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    padding-left: 2%;
+}
+
+.card {
+    margin: 1rem 0;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    left: 4%;
+    top: 11%;
+}
+
+.goal {
+    font-size: 1.4rem;
+    position: absolute;
+    font-weight: bold;
+    left: 13%;
+    top: 13%;
+}
+
+.subline {
+    font-size: 1.2rem;
+    position: absolute;
+    font-weight: lighter;
+    left: 14%;
+    top: 43%;
+}
+
+.sideBar {
+    position: absolute;
+    height: 90%;
+    width: 15%;
+    right: 0%;
+    top: 10%;
+}
+
+.progressBar {
+    border: 1px solid black;
+    width: 15%;
+    height: 85%;
+    margin: 1rem auto;
+}
+
+.progressNumber {
+    position: absolute;
+    margin: 0 auto;
+    right: 22%;
+    font-size: 1.25124rem;
+}
