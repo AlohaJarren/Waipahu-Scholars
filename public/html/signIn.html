@@ -19,7 +19,20 @@
 
     </div>
     <script>
-        function myFunction() {
+        function myFunction(e) {
+            let gpa = '2'
+                let email = document.querySelector('#email2').value
+                let password = document.querySelector('#password2').value
+                console.log(email)
+                console.log(password)
+            auth
+            .createUserWithEmailAndPassword(email, password)
+            .then(info => {
+                database.collection('users').doc(info.user.uid).set({gpagoal: gpa}).then(() => {console.log('it fuckn worked')})
+            })
+            .catch(err => {
+                console.log(err.message);
+            })
             location.replace("signIn2.html")
         }
     </script>
